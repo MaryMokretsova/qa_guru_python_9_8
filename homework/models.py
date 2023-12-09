@@ -30,7 +30,7 @@ class Product:
         if self.check_quantity(quantity):
             self.quantity -= quantity
         else:
-            raise ValueError('продуктов не хватает')
+            raise ValueError
 
     def __hash__(self):
         return hash(self.name + self.description)
